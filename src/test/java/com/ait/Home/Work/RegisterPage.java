@@ -2,28 +2,21 @@ package com.ait.Home.Work;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegisterPage extends TestBase {
-    @BeforeMethod
-    public void precondition() {
-        driver.get("https://demowebshop.tricentis.com/");
-    }
-
     @Test
     public void registerNewUserPositiveTest() {
         click(By.cssSelector("a[href='/register']"));
         type(By.name("FirstName"), "Ivanov");
         type(By.name("LastName"), "Ivan");
-        type(By.name("Email"), "vkjh3@gmail.com");
+        type(By.name("Email"), randomEmail);
         type(By.name("Password"), "123456");
         type(By.name("ConfirmPassword"), "123456");
         click(By.name("register-button"));
-
         // Проверяем, что пользователь успешно зарегистрировался
-
         Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
+        click(By.cssSelector("a[href='/logout']"));
     }
 
     @Test

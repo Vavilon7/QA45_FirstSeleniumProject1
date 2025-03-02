@@ -1,0 +1,252 @@
+18:32:14.231 [Test worker] INFO  c.demoWebShop.fw.ApplicationManager -- Tests start in Chrome browser
+18:32:22.523 [Test worker] INFO  c.demoWebShop.fw.ApplicationManager -- Current url --> https://demowebshop.tricentis.com/
+18:32:22.857 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:32:32.936 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:32:32.937 [Test worker] INFO  utils.MyListener -- List size is 0
+18:32:32.938 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: a[href='/login']
+18:32:33.088 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: a[href='/login'] Log in
+18:32:34.506 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Email']
+18:32:34.579 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Email'] 
+18:32:34.800 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Email']
+18:32:34.860 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Email'] 
+18:32:34.964 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Email']
+18:32:35.027 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Email'] 
+18:32:35.228 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Password']
+18:32:35.269 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Password'] 
+18:32:35.421 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Password']
+18:32:35.467 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Password'] 
+18:32:35.536 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@name='Password']
+18:32:35.578 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@name='Password'] 
+18:32:35.684 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: //*[@class='button-1 login-button']
+18:32:35.732 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: //*[@class='button-1 login-button'] 
+18:32:38.182 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:32:38.249 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:32:40.524 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='13']
+18:32:40.586 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='13'] Computing and Internet
+30.00
+10.00
+18:32:43.115 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-13
+18:32:43.185 [Test worker] INFO  utils.MyListener -- After find element -> By.id: add-to-cart-button-13 
+18:32:43.444 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-qty
+18:32:43.494 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-qty (1)
+18:32:43.520 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: bar-notification
+18:32:43.581 [Test worker] INFO  utils.MyListener -- After find element -> By.id: bar-notification 
+18:32:43.615 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-label
+18:32:43.725 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-label Shopping cart
+18:32:45.430 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='removefromcart']
+18:32:45.510 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='removefromcart'] 
+18:32:45.746 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='updatecart']
+18:32:45.809 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='updatecart'] 
+18:32:46.478 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: .order-summary-content
+18:32:46.700 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: .order-summary-content
+18:32:46.701 [Test worker] INFO  utils.MyListener -- List size is 1
+18:32:46.733 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:32:46.761 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:32:46.761 [Test worker] INFO  utils.MyListener -- List size is 1
+18:32:46.763 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:32:46.840 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:32:48.540 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='79']
+18:32:48.584 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='79'] Copy of Computing and Internet EX
+30.00
+10.00
+18:32:51.111 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-79
+18:33:01.249 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:33:01.250 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:01.250 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:33:01.251 [Test worker] INFO  utils.MyListener -- **********************************************
+18:33:01.257 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-79"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:33:01.258 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:01.771 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-79
+18:33:11.840 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:33:11.840 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:11.841 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:33:11.841 [Test worker] INFO  utils.MyListener -- **********************************************
+18:33:11.842 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-79"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:33:11.843 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:12.349 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-79
+18:33:22.399 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:33:22.400 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:22.402 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:33:22.402 [Test worker] INFO  utils.MyListener -- **********************************************
+18:33:22.403 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-79"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:33:22.404 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:22.422 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:33:22.454 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:33:22.454 [Test worker] INFO  utils.MyListener -- List size is 1
+18:33:22.455 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:33:22.499 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:33:23.454 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='45']
+18:33:23.539 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='45'] Fiction
+35.00
+24.00
+18:33:25.408 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-45
+18:33:25.480 [Test worker] INFO  utils.MyListener -- After find element -> By.id: add-to-cart-button-45 
+18:33:25.698 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-qty
+18:33:25.754 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-qty (1)
+18:33:25.778 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: bar-notification
+18:33:25.824 [Test worker] INFO  utils.MyListener -- After find element -> By.id: bar-notification 
+18:33:25.845 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-label
+18:33:25.947 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-label Shopping cart
+18:33:27.081 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='removefromcart']
+18:33:27.144 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='removefromcart'] 
+18:33:27.359 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='updatecart']
+18:33:27.424 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='updatecart'] 
+18:33:28.468 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: .order-summary-content
+18:33:28.503 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: .order-summary-content
+18:33:28.503 [Test worker] INFO  utils.MyListener -- List size is 1
+18:33:28.513 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:33:28.530 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:33:28.530 [Test worker] INFO  utils.MyListener -- List size is 1
+18:33:28.531 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:33:28.603 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:33:30.189 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='78']
+18:33:30.242 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='78'] Fiction EX
+35.00
+24.00
+18:33:31.341 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-78
+18:33:41.381 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:33:41.381 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:41.382 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:33:41.387 [Test worker] INFO  utils.MyListener -- **********************************************
+18:33:41.387 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-78"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:33:41.389 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:41.896 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-78
+18:33:51.930 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:33:51.931 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:51.931 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:33:51.932 [Test worker] INFO  utils.MyListener -- **********************************************
+18:33:51.932 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-78"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:33:51.934 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:33:52.445 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-78
+18:34:02.474 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:34:02.475 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:02.475 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:34:02.475 [Test worker] INFO  utils.MyListener -- **********************************************
+18:34:02.476 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-78"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:34:02.477 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:02.484 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:34:02.511 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:34:02.512 [Test worker] INFO  utils.MyListener -- List size is 1
+18:34:02.514 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:34:02.548 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:34:03.333 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='22']
+18:34:03.377 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='22'] Health Book
+27.00
+10.00
+18:34:03.695 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-22
+18:34:07.655 [Test worker] INFO  utils.MyListener -- After find element -> By.id: add-to-cart-button-22 
+18:34:07.882 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-qty
+18:34:07.953 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-qty (1)
+18:34:07.972 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: bar-notification
+18:34:08.000 [Test worker] INFO  utils.MyListener -- After find element -> By.id: bar-notification 
+18:34:08.016 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: .cart-label
+18:34:08.089 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: .cart-label Shopping cart
+18:34:08.839 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='removefromcart']
+18:34:08.918 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='removefromcart'] 
+18:34:09.165 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: input[name='updatecart']
+18:34:09.199 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: input[name='updatecart'] 
+18:34:09.852 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: .order-summary-content
+18:34:10.026 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: .order-summary-content
+18:34:10.027 [Test worker] INFO  utils.MyListener -- List size is 1
+18:34:10.037 [Test worker] INFO  utils.MyListener -- Before find elements -> By.cssSelector: a[href='/logout']
+18:34:10.071 [Test worker] INFO  utils.MyListener -- After find elements -> By.cssSelector: a[href='/logout']
+18:34:10.071 [Test worker] INFO  utils.MyListener -- List size is 1
+18:34:10.073 [Test worker] INFO  utils.MyListener -- Before find element -> By.xpath: (//a[@href='/books'])[1]
+18:34:10.115 [Test worker] INFO  utils.MyListener -- After find element -> By.xpath: (//a[@href='/books'])[1] BOOKS
+18:34:10.867 [Test worker] INFO  utils.MyListener -- Before find element -> By.cssSelector: [data-productid='27']
+18:34:10.942 [Test worker] INFO  utils.MyListener -- After find element -> By.cssSelector: [data-productid='27'] Science
+67.00
+51.00
+18:34:11.182 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-27
+18:34:21.208 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:34:21.208 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:21.208 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:34:21.209 [Test worker] INFO  utils.MyListener -- **********************************************
+18:34:21.210 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-27"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:34:21.210 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:21.716 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-27
+18:34:31.732 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:34:31.733 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:31.733 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:34:31.733 [Test worker] INFO  utils.MyListener -- **********************************************
+18:34:31.733 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-27"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:34:31.734 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:32.238 [Test worker] INFO  utils.MyListener -- Before find element -> By.id: add-to-cart-button-27
+18:34:42.284 [Test worker] INFO  utils.MyListener -- The test has a problem
+18:34:42.285 [Test worker] INFO  utils.MyListener -- ***********************************************
+18:34:42.285 [Test worker] INFO  utils.MyListener -- Method -> findElement
+18:34:42.285 [Test worker] INFO  utils.MyListener -- **********************************************
+18:34:42.286 [Test worker] INFO  utils.MyListener -- Target exception org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-button\-27"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34ae1c96d8220ac3a77471ba1eca65be, findElement {using=id, value=add-to-cart-button-27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Hi-Tech\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63709/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ae1c96d8220ac3a77471ba1eca65be
+18:34:42.287 [Test worker] INFO  utils.MyListener -- ***********************************************

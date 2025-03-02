@@ -1,57 +1,71 @@
 package com.ait.Home.Work;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import data.User;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AddItemToCartTests extends TestBase{
-
-    private final String productName = "14.1-inch Laptop"; // Название товара
-    private LoginPage loginPage;
-
+public class AddItemToCartTests extends TestBase {
     @BeforeMethod(alwaysRun = true)
     public void preconditions() {
-        loginPage = new LoginPage();
-        // Логинимся, если не залогинены
-        if (isElementPresent(By.cssSelector("a[href='/login']"))) {
-            loginPage.logInPositiveTest();
+        if (!app.getLoginPageHelper().isLoginSuccessful()) {
+            app.getLoginPageHelper().clickOnLoginLink();
+            app.getLoginPageHelper().fillLoginForm(new User("Bnmjg88@gmail.com", "Man1234$"));
+            app.getLoginPageHelper().clickOnLoginButton();
         }
     }
-    @Test(description = "Добавление товара в корзину, проверка количества и удаление")
-    public void addItemAndRemoveFromCartTest() {
-        // 1. Найти и кликнуть по товару
-        clickOnFirstProductByName(productName);
 
-        // 2. Добавить товар в корзину
-        click(By.id("add-to-cart-button-31"));
-
-        // 3. Проверка появления сообщения о добавлении
-        Assert.assertTrue(isElementPresent(By.cssSelector(".bar-notification.success")),
-                "Сообщение о добавлении товара не отображается!");
-
-        // 4. Проверка количества товара в корзине
-        String cartQty = driver.findElement(By.cssSelector(".cart-qty")).getText();
-        Assert.assertTrue(cartQty.contains("1"), "Количество товаров в корзине не обновилось!");
-
-        // 5. Открыть корзину
-        click(By.cssSelector(".cart-label"));
-
-        // 6. Удалить товар
-        click(By.cssSelector("input[name='removefromcart']")); // Чекбокс "Удалить"
-        click(By.cssSelector("input[name='updatecart']")); // Кнопка "Обновить корзину"
-
-        // 7. Проверить, что корзина пуста
-        Assert.assertTrue(isElementPresent(By.cssSelector(".order-summary-content")),
-                "Корзина не пуста!");
-        Assert.assertEquals(getText(By.cssSelector(".order-summary-content")).trim(),
-                "Your Shopping Cart is empty!",
-                "Текст сообщения о пустой корзине неверный!");
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test1() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(13);
+        app.getAddItemToCartHelper().addToCart(13);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
     }
-
-    // Метод для поиска товара по названию и клика по нему
-    public void clickOnFirstProductByName(String productName) {
-        By productLocator = By.xpath("(//a[contains(text(), '" + productName + "')])[1]");
-        driver.findElement(productLocator).click();
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test2() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(79);
+        app.getAddItemToCartHelper().addToCart(79);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
+    }
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test3() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(45);
+        app.getAddItemToCartHelper().addToCart(45);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
+    }
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test4() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(78);
+        app.getAddItemToCartHelper().addToCart(78);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
+    }
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test5() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(22);
+        app.getAddItemToCartHelper().addToCart(22);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
+    }
+    @Test(description = "Добавление и удаление товара из корзины")
+    public void test6() {
+        app.getAddItemToCartHelper().clickOnBooksButton();
+        app.getAddItemToCartHelper().clickOnProduct(27);
+        app.getAddItemToCartHelper().addToCart(27);
+        app.getAddItemToCartHelper().getCartQuantity();
+        app.getAddItemToCartHelper().removeItemFromCart();
+        app.getAddItemToCartHelper().verifyCartIsEmpty();
     }
 }

@@ -4,7 +4,6 @@ public class User {
     private String email;
     private String password;
 
-    // Пустой конструктор, чтобы можно было создать объект без параметров
     public User() {}
 
     // Конструктор с параметрами

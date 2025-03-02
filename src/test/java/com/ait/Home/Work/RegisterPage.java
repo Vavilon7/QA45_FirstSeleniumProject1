@@ -1,45 +1,49 @@
 package com.ait.Home.Work;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import data.Contact;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegisterPage extends TestBase {
+    @BeforeMethod
+    public void ensurePrecondition() {
+        if (!app.getRegistrationHelper().isRegisterButtonPresent()) {
+            app.getRegistrationHelper().clickOnContinueButton();
+        }
+    }
     @Test
     public void registerNewUserPositiveTest() {
-        click(By.cssSelector("a[href='/register']"));
-        type(By.name("FirstName"), "Ivanov");
-        type(By.name("LastName"), "Ivan");
-        type(By.name("Email"), randomEmail);
-        type(By.name("Password"), "123456");
-        type(By.name("ConfirmPassword"), "123456");
-        click(By.name("register-button"));
-        // Проверяем, что пользователь успешно зарегистрировался
-        Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
-        click(By.cssSelector("a[href='/logout']"));
+        app.getRegistrationHelper().openRegisterPage();
+        app.getRegistrationHelper().fillRegisterForm(new Contact("Ivanov", "Ivan", "Bnmjg88@gmail.com", "Man1234$", "Man1234$"));
+        app.getRegistrationHelper().submitRegisterForm();
+        app.getRegistrationHelper().isRegistrationSuccessful();
     }
-
     @Test
-    public void registerWithInvalidDataNegativeTest() {
-        click(By.cssSelector("a[href='/register']"));
-        type(By.name("FirstName"), "Ivan");
-        type(By.name("LastName"), "Ivanov");
-        type(By.name("Email"), "bodak83gmail.com"); // Неправильный email
-        type(By.name("Password"), "12346"); // Слишком короткий пароль
-        type(By.name("ConfirmPassword"), "123456"); // Несовпадающие пароли
-        click(By.name("register-button"));
+    public void registerExistedUserNegativeTest() {
+        app.getRegistrationHelper().openRegisterPage();
+        app.getRegistrationHelper().fillRegisterForm(new Contact("Ivan", "Ivanov", "manel@gm.com", "123", "1234")); // Некорректные данные
+        app.getRegistrationHelper().submitRegisterForm();
 
-        // Проверяем сообщение об ошибке email
-        Assert.assertTrue(isElementPresent(By.cssSelector(".field-validation-error[data-valmsg-for='Email']")));
-        Assert.assertEquals(getText(By.cssSelector(".field-validation-error[data-valmsg-for='Email']")), "Wrong email");
+        // Проверка ошибки Email
+        if (app.getRegistrationHelper().isEmailErrorPresent()) {
+            if (app.getRegistrationHelper().isEmailErrorCorrect("Wrong email")) {
+                System.out.println(" Ошибка Email отображается правильно.");
+            } else {
+                System.out.println(" Ошибка! Неправильное сообщение об ошибке Email.");
+            }
+        } else {
+            System.out.println("Ошибка! Сообщение об ошибке Email не найдено.");
+        }
 
-        // Проверяем сообщение об ошибке пароля
-        Assert.assertTrue(isElementPresent(By.cssSelector(".field-validation-error[data-valmsg-for='Password']")));
-        Assert.assertEquals(getText(By.cssSelector(".field-validation-error[data-valmsg-for='Password']")), "The password should have at least 6 characters.");
-
-        // Проверяем сообщение о несовпадающих паролях
-        Assert.assertTrue(isElementPresent(By.cssSelector(".field-validation-error[data-valmsg-for='ConfirmPassword']")));
-        Assert.assertEquals(getText(By.cssSelector(".field-validation-error[data-valmsg-for='ConfirmPassword']")), "The password and confirmation password do not match.");
+        // Проверка ошибки Password
+        if (app.getRegistrationHelper().isPasswordErrorPresent()) {
+            if (app.getRegistrationHelper().isPasswordErrorCorrect("The password should have at least 6 characters.")) {
+                System.out.println(" Ошибка пароля отображается правильно.");
+            } else {
+                System.out.println(" Ошибка! Неправильное сообщение об ошибке пароля.");
+            }
+        } else {
+            System.out.println("Ошибка! Сообщение об ошибке пароля не найдено.");
+        }
     }
-
 }

@@ -3,14 +3,17 @@
 <suite name="Smoky" verbose="1">
     <test name="Smoky">
         <classes>
-            <class name="com.ait.Home.Work.RegisterPage"/>
             <class name="com.ait.Home.Work.LoginPage">
                 <methods>
                     <exclude name=".*Negative.*"/>
                 </methods>
             </class>
-            <class name="com.ait.Home.Work.AddItemToCartTests"/>
-            <class name="com.ait.Home.Work.TestNgDemoShop"/>
+            <class name="com.ait.Home.Work.AddItemToCartTests">
+                <methods>
+                    <exclude name=".*Data.*"/>
+                </methods>
+            </class>
+            <class name="com.ait.Home.Work.RegisterPage"/>
         </classes>
     </test>
 </suite>

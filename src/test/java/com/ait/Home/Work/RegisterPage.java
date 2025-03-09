@@ -3,20 +3,23 @@ package com.ait.Home.Work;
 import data.Contact;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import utils.DataProviders;
 
 public class RegisterPage extends TestBase {
     @BeforeMethod
-    public void ensurePrecondition() {
+    public void Precondition() {
         if (!app.getRegistrationHelper().isRegisterButtonPresent()) {
             app.getRegistrationHelper().clickOnContinueButton();
         }
     }
-    @Test
-    public void registerNewUserPositiveTest() {
+    @Test(dataProvider = "registerData", dataProviderClass = DataProviders.class)
+    public void registerNewUserPositiveTest(Contact contact) {
         app.getRegistrationHelper().openRegisterPage();
-        app.getRegistrationHelper().fillRegisterForm(new Contact("Ivanov", "Ivan", "Bnmjg88@gmail.com", "Man1234$", "Man1234$"));
+        app.getRegistrationHelper().fillRegisterForm(contact);
         app.getRegistrationHelper().submitRegisterForm();
         app.getRegistrationHelper().isRegistrationSuccessful();
+        app.getRegistrationHelper().clickOnLogOut();
+
     }
     @Test
     public void registerExistedUserNegativeTest() {

@@ -1,15 +1,15 @@
 package com.ait.Home.Work;
 
 import data.User;
+import data.UserData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 public class AddItemToCartTests extends TestBase {
     @BeforeMethod(alwaysRun = true)
     public void preconditions() {
         if (!app.getLoginPageHelper().isLoginSuccessful()) {
             app.getLoginPageHelper().clickOnLoginLink();
-            app.getLoginPageHelper().fillLoginForm(new User("Bnmjg88@gmail.com", "Man1234$"));
+            app.getLoginPageHelper().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
             app.getLoginPageHelper().clickOnLoginButton();
         }
     }

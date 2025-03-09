@@ -2,6 +2,7 @@ package com.ait.Home.Work;
 
 
 import data.User;
+import data.UserData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ public class LoginPage extends TestBase {
     @Test
     public void loginPositiveTest() {
         app.getLoginPageHelper().clickOnLoginLink();
-        app.getLoginPageHelper().fillLoginForm(new User("Bnmjg88@gmail.com", "Man1234$"));
+        app.getLoginPageHelper().fillLoginForm(new User().setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD));
         app.getLoginPageHelper().clickOnLoginButton();
 
         if (app.getLoginPageHelper().isLoginSuccessful()) {

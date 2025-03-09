@@ -4,6 +4,7 @@
     <test name="Quick">
         <classes>
             <class name="com.ait.Home.Work.LoginPage"/>
+            <class name="com.ait.Home.Work.RegisterPage"/>
         </classes>
     </test>
 </suite>

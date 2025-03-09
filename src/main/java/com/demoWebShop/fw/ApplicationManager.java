@@ -24,10 +24,10 @@ public class ApplicationManager {
     public static SoftAssert softAssert = new SoftAssert();
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
-    AddItemToCartHelper addItemToCartHelper;
-    LoginPageHelper loginPageHelper;
-    MenuPageHelper menuPageHelper;
-    RegisterPageHelper registrationHelper;
+    public static AddItemToCartHelper addItemToCartHelper;
+    public static LoginPageHelper loginPageHelper;
+    public static MenuPageHelper menuPageHelper;
+    public static RegisterPageHelper registrationHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;

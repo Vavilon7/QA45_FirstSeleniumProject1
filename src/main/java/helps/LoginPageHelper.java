@@ -18,9 +18,11 @@ public class LoginPageHelper extends BaseHelper {
     private static final By LOGOUT_BUTTON = By.cssSelector("a[href='/logout']");
 
     public boolean isLogInPresent() {
+
         return isElementPresent(LOGIN_LINK);
     }
     public void clickOnLoginLink() {
+
         click(LOGIN_LINK);
     }
     public void fillLoginForm(User user) {

@@ -19,6 +19,9 @@ public class RegisterPageHelper extends BaseHelper {
     public void openRegisterPage() {
         click(By.xpath("//a[@href='/register']"));
     }
+    public void clickOnLogOut() {
+        click(By.xpath("//a[@href='/logout']"));
+    }
 
     public void fillRegisterForm(Contact contact) {
         type(By.id("FirstName"), contact.getFirstName());
